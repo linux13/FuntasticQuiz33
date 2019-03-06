@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SSound"
+    android:background="@drawable/questionbackground"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout"
+    >
+    <include
+        android:id="@+id/ttoolbar"
+        layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="20sp"
+            android:scaleType="center"
+            android:src="@drawable/music_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="4dp">
+
+            <Button
+                android:onClick="play"
+                android:id="@+id/btn_play"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/play_icon" />
+
+            <Button
+                android:onClick="pause"
+                android:id="@+id/btn_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/btn_play"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_toStartOf="@+id/btn_play"
+                android:layout_toLeftOf="@+id/btn_play"
+                android:background="@drawable/pause_icon" />
+
+            <Button
+                android:onClick="stop"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/btn_play"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/btn_play"
+                android:background="@drawable/stop_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/snd_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="20sp"
+            android:text="Question"
+            android:textSize="25sp"
+            android:visibility="gone"
+
+            />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Button
+            android:onClick="btnone"
+            android:visibility="gone"
+            android:background="@drawable/qbutton"
+            android:id="@+id/snd_btn_one"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_height="60dp"
+            android:layout_above="@+id/btn_two"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:baselineAligned="false"
+            android:text="Button" />
+
+        <Button
+            android:onClick="btntwo"
+            android:visibility="gone"
+            android:background="@drawable/qbutton"
+            android:id="@+id/snd_btn_two"
+            android:textAllCaps="false"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/btn_three"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:text="Button" />
+
+        <Button
+            android:onClick="btnthree"
+            android:visibility="gone"
+            android:background="@drawable/qbutton"
+            android:id="@+id/snd_btn_three"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_height="60dp"
+            android:layout_above="@+id/btn_four"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:text="Button" />
+
+        <Button
+            android:onClick="btnfour"
+            android:visibility="gone"
+            android:background="@drawable/qbutton"
+            android:id="@+id/snd_btn_four"
+            android:layout_width="match_parent"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="30dp"
+            android:text="Button" />
+        <Button
+            android:onClick="sndHint"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_hint"
+            android:layout_marginTop="10dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/hint_icon"
+            />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

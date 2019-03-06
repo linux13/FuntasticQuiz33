@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell_pc.funtasticquiz"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="28" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.dell_pc.funtasticquiz.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.dell_pc.funtasticquiz.Main2Activity" />
+        <activity android:name="com.example.dell_pc.funtasticquiz.Start" />
+        <activity android:name="com.example.dell_pc.funtasticquiz.Instruction" />
+        <activity android:name="com.example.dell_pc.funtasticquiz.About" />
+        <activity android:name="com.example.dell_pc.funtasticquiz.Exit" />
+        <activity android:name="com.example.dell_pc.funtasticquiz.Simple" />
+        <activity android:name="com.example.dell_pc.funtasticquiz.FinalResult" />
+        <activity android:name="com.example.dell_pc.funtasticquiz.SSound" />
+        <activity android:name="com.example.dell_pc.funtasticquiz.VVideo" />
+        <activity android:name="com.example.dell_pc.funtasticquiz.IImage" />
+        <activity android:name="com.example.dell_pc.funtasticquiz.ResultSplash" />
+        <activity android:name="com.example.dell_pc.funtasticquiz.FinalResultFailSplash" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.dell_pc.funtasticquiz.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

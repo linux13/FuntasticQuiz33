@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/instructionbackground"
+    tools:context=".Instruction">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAllCaps="false"
+    android:textSize="30sp"
+    android:gravity="center"
+    android:textColor="#e7077e"
+    android:text="After launching the application PRESS the Start BUTTON.
+SELECT the first level called Simple.It will  automatically open quiz window.
+You can see one question and its associated image,audio or video with four
+option BUTTON.Now SELECT your answer.If your answer is Correct,it will pop
+'Correct!:)' else it will pop 'Wrong :('. It will then move to the next question.
+Earn enough score to pass this level to move on to the next one.Hints are also
+included whenever in need."
+    />
+</ScrollView>

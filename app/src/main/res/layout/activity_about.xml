@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/aboutbackground"
+    tools:context=".About">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAllCaps="false"
+    android:textSize="30sp"
+    android:gravity="center"
+    android:textColor="#8f1111"
+    android:text="
+    In this app you can learn many interesting facts related to general  knowledge based on different genre...
+
+ For example:
+ Movies
+ Literature,
+ Sports,
+ Poetry,
+ Geography,
+ Biography,
+ Science,
+ Technology,
+ Biology,
+ and so on..
+
+This app contains three levels.
+Each level has 20 questions. Where questions are represented via text,
+image,audio and video.
+
+Hope you will enjoy :)
+
+  "/>
+</ScrollView>
